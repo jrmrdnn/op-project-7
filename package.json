@@ -1,0 +1,46 @@
+{
+  "name": "p7",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n \"Backend,Frontend\" -p \"[{name}]\" -c \"blue,green\" \"nodemon backend/server.js\" \"npx rollup -c frontend/rollup.config.js --watch\"",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "argon2": "^0.27.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "helmet": "^4.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "preact": "^10.5.13",
+    "preact-custom-element": "^4.2.1",
+    "sequelize": "^6.6.2",
+    "socket.io": "^4.1.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/preset-env": "^7.14.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "concurrently": "^6.1.0",
+    "rollup": "^2.48.0",
+    "rollup-plugin-scss": "^2.6.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "browserslist": "> 0.25%, not dead"
+}

@@ -1,0 +1,49 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2b4285;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  svg {
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 390px) {
+    padding: 7px 10px;
+    margin-top: 0.7rem;
+    font-size: 0.7rem;
+  }
+}
+
+.danger {
+  background-color: #dd2419 !important;
+}
+
+.succes {
+  background-color: #12814c !important;
+}
+
+.btn-group {
+  > .btn {
+    margin-right: 1rem;
+
+    @media (max-width: 560px) {
+      display: block;
+    }
+
+    @media (max-width: 390px) {
+      margin-right: 0.5rem;
+      width: 100%;
+    }
+  }
+}

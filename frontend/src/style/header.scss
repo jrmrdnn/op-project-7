@@ -1,0 +1,39 @@
+header {
+  position: relative;
+  padding: 0 2rem;
+  border-bottom: 0.5px solid #243374;
+  z-index: 9;
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 20px;
+    border-right: 0.5px solid #243374;
+    color: #fff;
+
+    &::before {
+      content: "";
+      width: 243px;
+      height: 39px;
+      margin-right: 10px;
+      background: url(img/icon-font-white.svg) no-repeat;
+    }
+
+    @media (max-width: 880px) {
+      border-right: none;
+      margin-left: -25px;
+    }
+  }
+}

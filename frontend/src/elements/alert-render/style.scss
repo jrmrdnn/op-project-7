@@ -1,0 +1,12 @@
+.alert {
+  padding: 20px;
+  background-color: #1fa564;
+
+  p {
+    color: #fff;
+  }
+
+  &.error {
+    background-color: #dd2419 !important;
+  }
+}

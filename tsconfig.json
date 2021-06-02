@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es2020",
+        "jsx": "react",
+        "jsxFactory": "h",
+        "types": ["node"],
+        "moduleResolution": "node",
+        "module": "es2020",
+        "lib": [
+            "DOM",
+            "ES6",
+            "DOM.Iterable"
+        ],
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "frontend/@types/**/*.*",
+        "frontend/src/**/*.*"
+    ]
+}

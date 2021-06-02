@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./img/icon.svg" rel="shortcut icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./app.css" />
+    <script defer src="./socket.io/socket.io.min.js"></script>
+    <script defer type="module" src="./app.js"></script>
+    <title>Groupomania</title>
+  </head>
+  <body class="body">
+    <header>
+      <div class="topbar">
+        <a href="/">
+          <div class="logo"></div>
+        </a>
+        <info-render></info-render>
+        <alert-render></alert-render>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="wrapper-box">
+          <side-nav></side-nav>
+          <section class="content">
+            <messages-render></messages-render>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>© Groupomania</footer>
+  </body>
+</html>
